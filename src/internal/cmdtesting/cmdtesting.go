@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/common"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/common"
 )
 
 const binaryName = "apt_query"

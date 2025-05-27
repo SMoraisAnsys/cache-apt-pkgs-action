@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/logging"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/logging"
 )
 
 type Executor interface {

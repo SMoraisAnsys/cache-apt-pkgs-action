@@ -1,3 +1,3 @@
-module awalsh128.com/cache-apt-pkgs-action
+module SMoraisAnsys.com/cache-apt-pkgs-action
 
 go 1.20

@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/logging"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/logging"
 )
 
 // An executor that replays execution results from a recorded result.

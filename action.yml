@@ -1,6 +1,6 @@
 name: 'Cache APT Packages'
 description: 'Install APT based packages and cache them for future runs.'
-author: awalsh128
+author: SMoraisAnsys
 branding:
   icon: 'hard-drive'  
   color: 'green'
@@ -44,6 +44,8 @@ runs:
   steps:
     - id: pre-cache
       run: |
+        echo "GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH}"
+        ls -la "${GITHUB_ACTION_PATH}"
         ${GITHUB_ACTION_PATH}/pre_cache_action.sh \
           ~/cache-apt-pkgs \
           "$VERSION" \

@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/logging"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/logging"
 )
 
 // An executor that proxies command executions from the OS.

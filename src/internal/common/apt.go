@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/exec"
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/logging"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/exec"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/logging"
 )
 
 // An APT package name and version representation.
@@ -52,6 +52,10 @@ func getNonVirtualPackage(executor exec.Executor, name string) (pkg *AptPackage,
 func getPackage(executor exec.Executor, paragraph string) (pkg *AptPackage, err error) {
 	errMsgs := []string{}
 	for _, splitLine := range GetSplitLines(paragraph, ":", 2) {
+		if len(splitLine.Words) < 2 {
+			logging.Debug("skipping invalid line: %+v\n", splitLine.Line)
+			continue
+		}
 		switch splitLine.Words[0] {
 		case "Package":
 			// Initialize since this will provide the first struct value if present.

@@ -4,7 +4,7 @@ import (
 	"flag"
 	"testing"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/cmdtesting"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/cmdtesting"
 )
 
 var createReplayLogs bool = false

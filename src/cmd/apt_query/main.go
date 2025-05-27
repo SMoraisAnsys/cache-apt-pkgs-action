@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/common"
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/exec"
-	"awalsh128.com/cache-apt-pkgs-action/src/internal/logging"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/common"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/exec"
+	"SMoraisAnsys.com/cache-apt-pkgs-action/src/internal/logging"
 )
 
 func getExecutor(replayFilename string) exec.Executor {
